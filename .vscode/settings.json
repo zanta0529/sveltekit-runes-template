@@ -1,0 +1,75 @@
+{
+    // ==========================================
+    // 1. 專案級別的共用底層設定
+    // ==========================================
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    // ==========================================
+    // 2. Java 生態 (重量級環境隔離)
+    // ==========================================
+    "[java]": {
+        // 使用 Red Hat 提供的 Java 擴充套件進行格式化
+        "editor.defaultFormatter": "redhat.java",
+        // 存檔時自動優化 Import (移除未使用、自動排序)
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    // 規範此專案必須使用 Java 21 編譯 (但不綁定本機絕對路徑)
+    // VSCode 會自動去系統的 JAVA_HOME 或使用者的全域設定中尋找對應版本的 JDK
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "default": true
+        }
+    ],
+    // 確保 Java 語言伺服器在多專案架構下不會過度消耗記憶體
+    "java.server.launchMode": "Standard",
+
+    // ==========================================
+    // 3. Node.js / 前端生態
+    // ==========================================
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    },
+
+    // ==========================================
+    // 4. Python 生態
+    // ==========================================
+    // 這裡使用相對工作區的虛擬環境路徑，這是安全的，因為 .venv 通常建在專案內
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+
+    // ==========================================
+    // 5. Shell Script 生態
+    // ==========================================
+    "shellcheck.enable": true,
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format",
+        "editor.codeActionsOnSave": {}
+    },
+
+    // ==========================================
+    // 6. Markdown 文件生態
+    // ==========================================
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.wordWrap": "on",
+        "editor.codeActionsOnSave": {}
+    }
+}

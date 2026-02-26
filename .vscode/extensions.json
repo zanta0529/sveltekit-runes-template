@@ -1,0 +1,29 @@
+{
+    "recommendations": [
+        // === 共用基礎 ===
+        "esbenp.prettier-vscode",
+
+        // === Java 核心生態 ===
+        // 這是微軟官方的 Java 擴充包，內含 Language Support (Red Hat), Debugger, Test Runner, Maven 等必備工具
+        "vscjava.vscode-java-pack",
+
+        // === Node.js / 前端 ===
+        "dbaeumer.vscode-eslint",
+
+        // === Python 核心生態 ===
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+
+        // === Shell Script ===
+        "timonwong.shellcheck",
+        "foxundermoon.shell-format"
+    ],
+    "unwantedRecommendations": [
+        // "GitHub.copilot",
+        // "GitHub.copilot-chat",
+        "hookyqr.beautify",
+        // 避免與官方 Java 擴充包衝突的第三方或過時 Java 工具
+        "georgewfraser.vscode-javac"
+    ]
+}
