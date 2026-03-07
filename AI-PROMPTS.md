@@ -28,4 +28,5 @@ All Svelte code must follow these conventions:
 ---
 
 ## Example Command for the AI
+
 “Create a new Svelte 5 Runes component named TodoList that follows all project rules.”

@@ -1,2 +1,2 @@
-import { sveltekit } from '@sveltejs/kit/vite';
+import { sveltekit } from "@sveltejs/kit/vite";
 export default { plugins: [sveltekit()] };

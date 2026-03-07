@@ -42,4 +42,5 @@ This repo includes `AI-PROMPTS.md` which defines strict rules for generating con
 ---
 
 ## 📄 License
+
 MIT

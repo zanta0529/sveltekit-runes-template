@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Temporary files
+public/tmp/
+public/generated/
+*.log
+*.tmp
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Documentation builds
+docs/.vitepress/cache/
+docs/.vitepress/dist/

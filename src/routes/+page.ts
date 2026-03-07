@@ -1,1 +1,1 @@
-export const load = () => ({ message: 'Welcome' });
+export const load = () => ({ message: "Welcome" });
